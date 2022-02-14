@@ -67,7 +67,7 @@ function checkGreenLetters(greenLetters, wordList) {
     }
     greenLetters.forEach(gl => {
         wordList = wordList.filter(w => {
-            return w.charAt(gl.i) == yl.l
+            return w.charAt(gl.i) == gl.l
         })
     });
     return wordList
